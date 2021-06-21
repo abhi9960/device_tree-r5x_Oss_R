@@ -25,6 +25,9 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# ANX Camera
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
