@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_r5x.mk
+    $(LOCAL_DIR)/corvus_r5x.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_r5x-user \
-    xtended_r5x-userdebug \
-    xtended_r5x-eng
+    corvus_r5x-user \
+    corvus_r5x-userdebug \
+    corvus_r5x-eng

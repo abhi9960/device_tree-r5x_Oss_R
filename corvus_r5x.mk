@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,12 +29,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
+scr_resolution := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+CORVUS_MAINTAINER := LordKurama
 
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := xtended_r5x
+PRODUCT_NAME := corvus_r5x
 PRODUCT_MODEL := Realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
@@ -54,8 +56,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
-
-# Xtended stuff
-XTENDED_BUILD_MAINTAINER := Lordkurama
-XTENDED_BUILD_TYPE := UNOFFICIAL
 
